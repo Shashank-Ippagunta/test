@@ -88,15 +88,7 @@
 			stats = new Stats();
 			map.getContainer().appendChild(stats.dom);
 			animate();
-			// gui
-			gui = new GUI();
-			// going below 2.5 degrees will start to generate serious issues with polygons in fill-extrusions and 3D meshes
-			// going above 45 degrees will also produce clipping and performance issues
-			gui.add(api, 'fov', 2.5, 45.0).step(0.1).onChange(changeFOV);
-		}
-
-		function changeFOV() {
-			tb.fov = api.fov;
+			
 		}
 
 		// The 'building' layer in the mapbox-streets vector source contains building-height
