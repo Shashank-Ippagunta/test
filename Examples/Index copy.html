@@ -285,33 +285,7 @@
     });
 
 // Add DGII Building footprint	
-map.on('load', () => {
-        map.addSource('Train1-ant9ov', {
-            type: 'vector',
-            // Use any Mapbox-hosted tileset using its tileset id.
-            // Learn more about where to find a tileset id:
-            // https://docs.mapbox.com/help/glossary/tileset-id/
-            url: 'mapbox://shashankippagunta.2uiaf7rb'
-        });
-        map.addLayer(
-            {
-                'id': 'shashankippagunta.2uiaf7rb',
-                'type': 'line',
-                'source': 'Train1-ant9ov',
-                'source-layer': 'Train1-ant9ov',
-                'layout': {
-                    'line-join': 'round',
-                    'line-cap': 'round'
-                },
-                'paint': {
-                    'line-color': '#ff69b4',
-                    'line-width': 1
-                }
-            },
-           
-        );
-    });
-	
+
   
 </script>
 
